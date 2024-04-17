@@ -64,5 +64,36 @@
 \end{align*}
 
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newpage
+\section*{ch2: Hypergraph Learning Architecture}
+
+
+~ \\[3pt]
+(1) Features
+\begin{align*}
+    & X \in R^{ |V| \times d } \qquad \qquad Y \in R^{ |E| \times d'} \\[3pt]
+    & \text{Externel + Internal(local+global) + Identity}
+\end{align*}
+
+
+~ \\[3pt]
+(2) Transformation
+
+~ \\[3pt]
+Reductive Transformation
+\begin{align*}
+    & ( E, X, Y ) \Rightarrow A 
+    \qquad \qquad 
+    \text{hyperedges to edges} \\[3pt]
+    & \text{clique expansion + adaptive expansion}
+\end{align*}
+
+~ \\[3pt]
+Non-reductive Transformation
+\begin{align*}
+    & \text{star/line/tensor expansion}
+\end{align*}
+
 \end{document}
 
