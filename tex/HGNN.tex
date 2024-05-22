@@ -70,15 +70,22 @@
 
 
 \begin{align*}
+    ~ \\[3pt]
     g \star x &= \phi ( (\phi^{T} g) \odot (\phi^{T} x) ) 
               = \phi g(\wedge) (\phi^{T} x)  \\[3pt]
     g(\wedge) &= diag( g(\lambda_{1}), ..., g(\lambda_{n}) )  \\[3pt]
+    ~ \\[3pt]
     g \star x & \approx \sum_{k=0}^{K} \theta_{k} T_{k} ( \tilde{\Delta} ) x  \\[3pt]
+    \tilde{\Delta} & = \frac{2}{\lambda_{max}} \Delta - I  \\[3pt]
+    ~ \\[3pt]
+    K & = 2  \qquad \qquad \lambda_{max} = 2  \\[3pt]
+    g \star x & \approx \theta_{0}x - \theta_{1} 
+        D_{v}^{-1/2} H W D_{e}^{-1} H^{T} D_{v}^{-1/2} x  \\[3pt]
 \end{align*}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \newpage
-\section*{ch2: Hypergraph Generation and Transformation}
+\section*{ch3: Hypergraph Generation and Transformation}
 
 
 ~ \\[3pt]
