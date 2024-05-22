@@ -81,6 +81,13 @@
     K & = 2  \qquad \qquad \lambda_{max} = 2  \\[3pt]
     g \star x & \approx \theta_{0}x - \theta_{1} 
         D_{v}^{-1/2} H W D_{e}^{-1} H^{T} D_{v}^{-1/2} x  \\[3pt]
+    ~ \\[3pt]
+    \theta_{0} &= (1/2) \theta D_{v}^{-1/2} H D_{e}^{-1} H^{T} D_{v}^{-1/2} \qquad \qquad 
+    \theta_{1} = (-1/2) \theta  \\[3pt]
+    g \star x & \approx (1/2) \theta D_{v}^{-1/2} H (W+I) D_{e}^{-1} H^{T} D_{v}^{-1/2} x  \\[3pt]
+              & \approx \theta D_{v}^{-1/2} H W D_{e}^{-1} H^{T} D_{v}^{-1/2} x  \\[3pt]
+    ~ \\[3pt]
+    X^{t+1} &= \sigma ( D_{v}^{-1/2} H W D_{e}^{-1} H^{T} D_{v}^{-1/2} X^{t} \varTheta )  \\[3pt]
 \end{align*}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
