@@ -70,8 +70,10 @@
 
 
 \begin{align*}
-    g \star x = \phi ( (\phi^{T} g) \odot (\phi^{T} x) ) 
+    g \star x &= \phi ( (\phi^{T} g) \odot (\phi^{T} x) ) 
               = \phi g(\wedge) (\phi^{T} x)  \\[3pt]
+    g(\wedge) &= diag( g(\lambda_{1}), ..., g(\lambda_{n}) )  \\[3pt]
+    g \star x & \approx \sum_{k=0}^{K} \theta_{k} T_{k} ( \tilde{\Delta} ) x  \\[3pt]
 \end{align*}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
