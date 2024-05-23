@@ -15,3 +15,9 @@ Vertex Classification
         HGNN on Cooking200
         HGNN+ on Cooking200
 
+
+User-Item Recommender
+
+
+Auto Hyper-parameters Tuning
+

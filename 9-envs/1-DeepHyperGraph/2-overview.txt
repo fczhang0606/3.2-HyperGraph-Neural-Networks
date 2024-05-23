@@ -1,8 +1,8 @@
 https://deephypergraph.readthedocs.io/en/latest/start/structure.html
-
+Structures in DHG
 
 https://deephypergraph.readthedocs.io/en/latest/start/low_order/index.html
-
+Learning on Low-Order Structures
 
 https://deephypergraph.readthedocs.io/en/latest/start/high_order/index.html
 Learning on Hypergraph
