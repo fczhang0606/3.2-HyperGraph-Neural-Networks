@@ -1,0 +1,17 @@
+Vertex Classification
+    On Graph
+        Models
+        Dataset
+        Results
+        GCN on Cora
+        GAT on Cora
+        HGNN on Cora
+        HGNN+ on Cora
+    On Hypergraph
+        Models
+        Dataset
+        Results
+        GCN on Cooking200
+        HGNN on Cooking200
+        HGNN+ on Cooking200
+

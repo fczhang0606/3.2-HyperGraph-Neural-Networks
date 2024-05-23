@@ -1,0 +1,13 @@
+https://deephypergraph.readthedocs.io/en/latest/start/structure.html
+
+
+https://deephypergraph.readthedocs.io/en/latest/start/low_order/index.html
+
+
+https://deephypergraph.readthedocs.io/en/latest/start/high_order/index.html
+Learning on Hypergraph
+    Definition
+    Construction
+    Spectral-Based Learning
+    Spatial-Based Learning
+
