@@ -1,3 +1,4 @@
+https://deephypergraph.readthedocs.io/en/latest/examples/vertex_cls/index.html
 Vertex Classification
     On Graph
         Models
@@ -16,8 +17,10 @@ Vertex Classification
         HGNN+ on Cooking200
 
 
+https://deephypergraph.readthedocs.io/en/latest/examples/recommender.html
 User-Item Recommender
 
 
+https://deephypergraph.readthedocs.io/en/latest/examples/auto_ml/index.html
 Auto Hyper-parameters Tuning
 
