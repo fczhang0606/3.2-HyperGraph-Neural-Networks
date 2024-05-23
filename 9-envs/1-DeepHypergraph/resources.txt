@@ -1,0 +1,6 @@
+https://deephypergraph.com/#/
+https://deephypergraph.readthedocs.io/en/latest/
+https://deephypergraph.readthedocs.io/en/latest/zh/overview.html
+
+https://github.com/iMoonLab/DeepHypergraph
+
