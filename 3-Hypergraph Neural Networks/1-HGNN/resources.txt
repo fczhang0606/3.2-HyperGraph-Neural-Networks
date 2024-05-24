@@ -1,2 +1,24 @@
 https://github.com/iMoonLab/HGNN
 
+
+################################################################################################################################
+conda create -n HGNN_HGNN
+conda activate HGNN_HGNN
+
+conda install python=3.6
+
+https://pytorch.org/get-started/previous-versions/
+conda install pytorch=0.4.1 cuda90 -c pytorch
+################################################################################################################################
+conda install ipykernel
+conda install platformdirs
+pip3 install ipywidgets
+pip3 install --upgrade jupyter_core jupyter_client
+
+python -m ipykernel install --user --name HGNN_HGNN
+################################################################################################################################
+pip install pyyaml==5.4.1
+pip install scipy
+################################################################################################################################
+
+
