@@ -1,9 +1,9 @@
-https://github.com/iMoonLab/HGNN
+https://github.com/iMoonLab/DHGNN
 
 
 ################################################################################################################################
-conda create -n HGNN_HGNN
-conda activate HGNN_HGNN
+conda create -n HGNN_DHGNN
+conda activate HGNN_DHGNN
 
 conda install python=3.6.7
 
@@ -17,8 +17,7 @@ pip3 install --upgrade jupyter_core jupyter_client
 
 python -m ipykernel install --user --name HGNN_HGNN
 ################################################################################################################################
-pip install pyyaml==3.12
-pip install scipy==0.19.1
+pip install -r requirements.txt
 ################################################################################################################################
 
 
