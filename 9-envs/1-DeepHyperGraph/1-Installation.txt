@@ -1,7 +1,6 @@
-# Installation
 ################################################################################################################################
-conda create -n HGNN_HGNN
-conda activate HGNN_HGNN
+conda create -n HGNN_DHG
+conda activate HGNN_DHG
 
 conda install python=3.8
 
@@ -13,7 +12,7 @@ conda install platformdirs
 pip3 install ipywidgets
 pip3 install --upgrade jupyter_core jupyter_client
 
-python -m ipykernel install --user --name HGNN_HGNN
+python -m ipykernel install --user --name HGNN_DHG
 ################################################################################################################################
 pip install dhg
 ################################################################################################################################
