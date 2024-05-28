@@ -1,26 +1,19 @@
-https://deephypergraph.readthedocs.io/en/latest/examples/vertex_cls/index.html
-Vertex Classification
-    On Graph
-        Models
-        Dataset
-        Results
-        GCN on Cora
-        GAT on Cora
-        HGNN on Cora
-        HGNN+ on Cora
-    On Hypergraph
-        Models
-        Dataset
-        Results
-        GCN on Cooking200
-        HGNN on Cooking200
-        HGNN+ on Cooking200
+https://deephypergraph.readthedocs.io/en/latest/zh/examples/index.html
+    总览
 
 
-https://deephypergraph.readthedocs.io/en/latest/examples/recommender.html
-User-Item Recommender
+https://deephypergraph.readthedocs.io/en/latest/zh/examples/vertex_cls/graph.html
+    图上的节点分类
 
 
-https://deephypergraph.readthedocs.io/en/latest/examples/auto_ml/index.html
-Auto Hyper-parameters Tuning
+https://deephypergraph.readthedocs.io/en/latest/zh/examples/vertex_cls/hypergraph.html
+    超图上的节点分类
+
+
+https://deephypergraph.readthedocs.io/en/latest/zh/examples/recommender.html
+    用户-物品推荐（二分图）
+
+
+https://deephypergraph.readthedocs.io/en/latest/zh/examples/auto_ml/index.html
+    自动化超参调优
 

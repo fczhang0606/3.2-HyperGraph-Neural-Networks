@@ -1,3 +1,6 @@
+https://deephypergraph.readthedocs.io/en/latest/zh/start/install.html
+
+
 ################################################################################################################################
 conda create -n HGNN_DHG
 conda activate HGNN_DHG
