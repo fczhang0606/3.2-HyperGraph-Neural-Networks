@@ -1,13 +1,9 @@
-https://deephypergraph.readthedocs.io/en/latest/start/structure.html
-Structures in DHG
+https://deephypergraph.readthedocs.io/en/latest/zh/start/structure.html
+    （不同结构 + 不同操作）的组合
 
-https://deephypergraph.readthedocs.io/en/latest/start/low_order/index.html
-Learning on Low-Order Structures
+https://deephypergraph.readthedocs.io/en/latest/zh/start/low_order/index.html
+    低阶结构（图）上的操作
 
-https://deephypergraph.readthedocs.io/en/latest/start/high_order/index.html
-Learning on Hypergraph
-    Definition
-    Construction
-    Spectral-Based Learning
-    Spatial-Based Learning
+https://deephypergraph.readthedocs.io/en/latest/zh/start/high_order/index.html
+    高阶结构（图）上的操作
 
