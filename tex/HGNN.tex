@@ -89,9 +89,11 @@
     & hypergraph \quad \ (cut/partition): V = S + S^{c}  \\[3pt]
     & hyperedge \qquad (cut/partition): (e \cap S) + (e \cap S^{c})  \\[3pt]
     & hypergraph \quad \ bountry: \partial S = \{ (e \cap S) + (e \cap S^{c}) \}  \\[3pt]
+    ~ \\[3pt]
     & \text{vol}(S) \ \ = \sum_{v \in S} d(v)  \\[3pt]
-    & \text{vol}(\partial S) = \sum_{e \in \partial S} \frac{w(e)}{\delta (e)} 
-      \qquad \qquad \qquad \text{vol}(\partial S) = \text{vol}(\partial S^{c})  \\[3pt]
+    & \text{vol}(\partial S) = \sum_{e \in \partial S} 
+      |e \cap S||e \cap S^{c}| \frac{w(e)}{\delta (e)}  \\[3pt]
+    & \text{vol}(\partial S) = \text{vol}(\partial S^{c})  \\[3pt]
 \end{align*}
 
 
