@@ -147,6 +147,10 @@
     & = \sum_{e \in \partial S} \sum_{u \in S} \sum_{v \in S^{c}} 
         h(u, e) \frac{w(e)}{d(u)} h(v, e) \frac{1}{d(e)} 
         \frac{d(u)}{vol(V)}  \\[3pt]
+    & = \sum_{u \in S} \sum_{v \in S^{c}} \frac{d(u)}{vol(V)} 
+        \sum_{e \in \partial S} h(u, e) \frac{w(e)}{d(u)} h(v, e) \frac{1}{d(e)}  \\[3pt]
+    & = \sum_{u \in S} \sum_{v \in S^{c}} \frac{d(u)}{vol(V)} p(u, v) 
+      = \sum_{u \in S} \sum_{v \in S^{c}} \pi (u) p(u, v)  \\[3pt]
 \end{align*}
 
 
