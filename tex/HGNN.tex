@@ -108,8 +108,19 @@ Nature Random Walk:  \\[3pt]
 \begin{align*}
     & u-e/w(e)-v/uni-e/w(e)-v/uni-...  \\[3pt]
     & p(u, v) = \sum_{e \in E} 
-                H(u, e) \frac{w(e)}{d(u)} 
-                H(v, e) \frac{1}{d(e)}  \\[3pt]
+                h(u, e) \frac{w(e)}{d(u)} 
+                h(v, e) \frac{1}{d(e)}  \\[3pt]
+    & P = D_{v}^{-1} H W D_{e}^{-1} H^{T}  \\[3pt]
+    & \pi (v) = \frac{d(v)}{vol(V)} \qquad \qquad \qquad \qquad 
+      \text{one-step wlak from random start to v}  \\[3pt]
+    & \sum_{u \in V} \pi (u) p(u, v) = 
+      \sum_{u \in V} \frac{d(u)}{vol(V)} 
+      \sum_{e \in E} h(u, e) \frac{w(e)}{d(u)} h(v, e) \frac{1}{d(e)} \\[3pt]
+    & = \frac{1}{vol(V)} \sum_{u \in V} \sum_{e \in E} 
+        \frac{h(u, e)w(e)h(v, e)}{d(e)} \\[3pt]
+    & = \frac{1}{vol(V)} \sum_{e \in E} w(e) 
+        \sum_{u \in V} h(u, e) \frac{h(v, e)}{d(e)} \\[3pt]
+    & = \frac{1}{vol(V)} \sum_{e \in E} w(e) h(v, e) = \frac{d(v)}{vol(V)}  \\[3pt]
 \end{align*}
 
 
