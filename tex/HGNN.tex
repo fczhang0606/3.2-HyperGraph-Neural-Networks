@@ -126,7 +126,7 @@
 \begin{align*}
     & \text{vol}(S) \ \ = \sum_{v \in S} d(v)  \\[3pt]
     & \text{vol}(\partial S) = \sum_{e \in \partial S} 
-      |e \cap S||e \cap S^{c}| \frac{w(e)}{\delta (e)} 
+      |e \cap S||e \cap S^{c}| \frac{w(e)}{d(e)} 
       \qquad \qquad \qquad \qquad C_{d(e)}^{2}  \\[3pt]
     & \text{vol}(\partial S) = \text{vol}(\partial S^{c})  \\[3pt]
 \end{align*}
@@ -141,7 +141,12 @@
     & \frac{vol(S)}{vol(V)} 
       = \sum_{v \in S} \frac{d(v)}{vol(V)} 
       = \sum_{v \in S} \pi (v)  \\[3pt]
-    & \frac{vol(\partial S)}{vol(V)} 
+    & \frac{vol(\partial S)}{vol(V)} = \sum_{e \in \partial S} 
+      |e \cap S||e \cap S^{c}| \frac{w(e)}{d (e)} 
+      \frac{1}{vol(V)}  \\[3pt]
+    & = \sum_{e \in \partial S} \sum_{u \in S} \sum_{v \in S^{c}} 
+        h(u, e) \frac{w(e)}{d(u)} h(v, e) \frac{1}{d(e)} 
+        \frac{d(u)}{vol(V)}  \\[3pt]
 \end{align*}
 
 
