@@ -118,7 +118,7 @@
 \begin{align*}
     & hypergraph \quad \ (cut/partition): V = S + S^{c}  \\[3pt]
     & hyperedge \qquad (cut/partition): (e \cap S) + (e \cap S^{c})  \\[3pt]
-    & hypergraph \quad \ bountry: \partial S = \{ (e \cap S) + (e \cap S^{c}) \}  \\[3pt]
+    & hyperedge \qquad bountry: \partial S = \{ (e \cap S) + (e \cap S^{c}) \}  \\[3pt]
 \end{align*}
 
 
@@ -132,10 +132,16 @@
 \end{align*}
 
 
-~ \\[3pt]
 %
 \begin{align*}
     & argmin \ c(S) := vol(\partial S) (\frac{1}{volS} + \frac{1}{volS^{c}})  \\[3pt]
+    & argmin \ c(S) := \frac{vol(\partial S)}{vol(V)} 
+    (\frac{1}{ \frac{vol(S)}{vol(V)} } + 
+     \frac{1}{ \frac{vol(S^{c})}{vol(V)} })  \\[3pt]
+    & \frac{vol(S)}{vol(V)} 
+      = \sum_{v \in S} \frac{d(v)}{vol(V)} 
+      = \sum_{v \in S} \pi (v)  \\[3pt]
+    & \frac{vol(\partial S)}{vol(V)} 
 \end{align*}
 
 
