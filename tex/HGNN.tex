@@ -74,45 +74,29 @@
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \newpage
-\section*{ch2: Spectral Hypergraph Clustering}
-
-
-~ \\[3pt]
-\begin{CJK}{UTF8}{gbsn}
-    理解： \\[3pt]
-    1: 推导超图的拉普拉斯矩阵  \\[3pt]
-\end{CJK}
+\section*{ch2: Hypergraph Random Walk}
 
 
 ~ \\[3pt]
 %
-Hypergraph Cut/Partition:  \\[3pt]
 \begin{align*}
-    & hypergraph \quad \ (cut/partition): V = S + S^{c}  \\[3pt]
-    & hyperedge \qquad (cut/partition): (e \cap S) + (e \cap S^{c})  \\[3pt]
-    & hypergraph \quad \ bountry: \partial S = \{ (e \cap S) + (e \cap S^{c}) \}  \\[3pt]
-    ~ \\[3pt]
-    & \text{vol}(S) \ \ = \sum_{v \in S} d(v)  \\[3pt]
-    & \text{vol}(\partial S) = \sum_{e \in \partial S} 
-      |e \cap S||e \cap S^{c}| \frac{w(e)}{\delta (e)} 
-      \qquad \qquad \qquad \qquad C_{d(e)}^{2}  \\[3pt]
-    & \text{vol}(\partial S) = \text{vol}(\partial S^{c})  \\[3pt]
-    ~ \\[3pt]
-    & argmin \ c(S) := vol(\partial S) (\frac{1}{volS} + \frac{1}{volS^{c}})  \\[3pt]
+    & u-e/w(e)-v/uni-e/w(e)-v/uni-...  \\[3pt]
 \end{align*}
 
 
-~ \\[3pt]
 %
-Nature Random Walk:  \\[3pt]
 \begin{align*}
-    & u-e/w(e)-v/uni-e/w(e)-v/uni-...  \\[3pt]
     & p(u, v) = \sum_{e \in E} 
                 h(u, e) \frac{w(e)}{d(u)} 
                 h(v, e) \frac{1}{d(e)}  \\[3pt]
     & P = D_{v}^{-1} H W D_{e}^{-1} H^{T}  \\[3pt]
+\end{align*}
+
+
+%
+\begin{align*}
     & \pi (v) = \frac{d(v)}{vol(V)} \qquad \qquad \qquad \qquad 
-      \text{one-step wlak from random start to v}  \\[3pt]
+      \text{one-step wlak to v from random start}  \\[3pt]
     & \sum_{u \in V} \pi (u) p(u, v) = 
       \sum_{u \in V} \frac{d(u)}{vol(V)} 
       \sum_{e \in E} h(u, e) \frac{w(e)}{d(u)} h(v, e) \frac{1}{d(e)} \\[3pt]
@@ -124,7 +108,40 @@ Nature Random Walk:  \\[3pt]
 \end{align*}
 
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \newpage
+\section*{ch3: Hypergraph Cut/Partition}
+
+
+~ \\[3pt]
+%
+\begin{align*}
+    & hypergraph \quad \ (cut/partition): V = S + S^{c}  \\[3pt]
+    & hyperedge \qquad (cut/partition): (e \cap S) + (e \cap S^{c})  \\[3pt]
+    & hypergraph \quad \ bountry: \partial S = \{ (e \cap S) + (e \cap S^{c}) \}  \\[3pt]
+\end{align*}
+
+
+%
+\begin{align*}
+    & \text{vol}(S) \ \ = \sum_{v \in S} d(v)  \\[3pt]
+    & \text{vol}(\partial S) = \sum_{e \in \partial S} 
+      |e \cap S||e \cap S^{c}| \frac{w(e)}{\delta (e)} 
+      \qquad \qquad \qquad \qquad C_{d(e)}^{2}  \\[3pt]
+    & \text{vol}(\partial S) = \text{vol}(\partial S^{c})  \\[3pt]
+\end{align*}
+
+
+~ \\[3pt]
+%
+\begin{align*}
+    & argmin \ c(S) := vol(\partial S) (\frac{1}{volS} + \frac{1}{volS^{c}})  \\[3pt]
+\end{align*}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newpage
+\section*{ch4: Hypergraph Convolution}
 \begin{align*}
     ~ \\[3pt]
     g \star x &= \phi ( (\phi^{T} g) \odot (\phi^{T} x) ) 
