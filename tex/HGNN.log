@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.3.16)  5 JUN 2024 11:18
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.3.16)  5 JUN 2024 11:33
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -461,7 +461,7 @@ File: UTF8.enc 2021/10/16 4.8.5
 ) (c:/texlive/2024/texmf-dist/tex/latex/cjk/texinput/UTF8/UTF8.chr
 File: UTF8.chr 2021/10/16 4.8.5
 )
-Underfull \hbox (badness 10000) in paragraph at lines 141--147
+Underfull \hbox (badness 10000) in paragraph at lines 144--150
 
  []
 
@@ -470,7 +470,7 @@ File: UTF8.enc 2021/10/16 4.8.5
 ) (c:/texlive/2024/texmf-dist/tex/latex/cjk/texinput/UTF8/UTF8.chr
 File: UTF8.chr 2021/10/16 4.8.5
 )
-Underfull \hbox (badness 10000) in paragraph at lines 154--159
+Underfull \hbox (badness 10000) in paragraph at lines 157--162
 
  []
 
@@ -489,7 +489,7 @@ Here is how much of TeX's memory you used:
  1141 hyphenation exceptions out of 8191
  65i,20n,72p,217b,711s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb><c:/texlive/2024/texmf-dist/fonts/type1/arphic/gbsnu/gbsnu30.pfb><c:/texlive/2024/texmf-dist/fonts/type1/arphic/gbsnu/gbsnu56.pfb><c:/texlive/2024/texmf-dist/fonts/type1/arphic/gbsnu/gbsnu5b.pfb><c:/texlive/2024/texmf-dist/fonts/type1/arphic/gbsnu/gbsnu5c.pfb><c:/texlive/2024/texmf-dist/fonts/type1/arphic/gbsnu/gbsnu5f.pfb><c:/texlive/2024/texmf-dist/fonts/type1/arphic/gbsnu/gbsnu60.pfb><c:/texlive/2024/texmf-dist/fonts/type1/arphic/gbsnu/gbsnu62.pfb><c:/texlive/2024/texmf-dist/fonts/type1/arphic/gbsnu/gbsnu63.pfb><c:/texlive/2024/texmf-dist/fonts/type1/arphic/gbsnu/gbsnu65.pfb><c:/texlive/2024/texmf-dist/fonts/type1/arphic/gbsnu/gbsnu66.pfb><c:/texlive/2024/texmf-dist/fonts/type1/arphic/gbsnu/gbsnu6e.pfb><c:/texlive/2024/texmf-dist/fonts/type1/arphic/gbsnu/gbsnu72.pfb><c:/texlive/2024/texmf-dist/fonts/type1/arphic/gbsnu/gbsnu74.pfb><c:/texlive/2024/texmf-dist/fonts/type1/arphic/gbsnu/gbsnu76.pfb><c:/texlive/2024/texmf-dist/fonts/type1/arphic/gbsnu/gbsnu77.pfb><c:/texlive/2024/texmf-dist/fonts/type1/arphic/gbsnu/gbsnu79.pfb><c:/texlive/2024/texmf-dist/fonts/type1/arphic/gbsnu/gbsnu7e.pfb><c:/texlive/2024/texmf-dist/fonts/type1/arphic/gbsnu/gbsnu7f.pfb><c:/texlive/2024/texmf-dist/fonts/type1/arphic/gbsnu/gbsnu89.pfb><c:/texlive/2024/texmf-dist/fonts/type1/arphic/gbsnu/gbsnu8d.pfb><c:/texlive/2024/texmf-dist/fonts/type1/arphic/gbsnu/gbsnu96.pfb><c:/texlive/2024/texmf-dist/fonts/type1/arphic/gbsnu/gbsnuff.pfb>
-Output written on HGNN.pdf (5 pages, 193666 bytes).
+Output written on HGNN.pdf (5 pages, 193825 bytes).
 PDF statistics:
  198 PDF objects out of 1000 (max. 8388607)
  105 compressed objects within 2 object streams
