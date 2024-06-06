@@ -156,6 +156,23 @@
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \newpage
+\section*{ch4: Hypergraph Laplacian}
+
+
+\begin{align*}
+    & argmin \ c(S) := vol(\partial S) (\frac{1}{volS} + \frac{1}{volS^{c}})  \\[3pt]
+    & argmin_{f \in R^{|V|}} \frac{1}{2} 
+      \sum_{e \in E} \sum_{\{u, v\} \in e} 
+      \frac{w(e)}{d(e)} 
+      \left( \frac{f(u)}{\sqrt{d(u)}} - \frac{f(v)}{\sqrt{d(v)}}\ \right)^2  \\[3pt]
+    & \text{subject to: } \qquad 
+      \sum_{v \in V} f^2(v)=1 \qquad 
+      \sum_{v \in V} f(v) \sqrt{d(v)} = 0  \\[3pt]
+\end{align*}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newpage
 \section*{ch4: Hypergraph Convolution}
 
 
