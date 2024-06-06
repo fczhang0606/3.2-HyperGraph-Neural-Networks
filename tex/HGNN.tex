@@ -171,6 +171,19 @@
 \end{align*}
 
 
+\begin{align*}
+    & \Theta = D_{v}^{-1/2} H W D_{e}^{-1} H^{T} D_{v}^{-1/2}  \\[3pt]
+    & \Delta = I - \Theta  \\[3pt]
+    & \frac{1}{2} 
+    \sum_{e \in E} \sum_{\{u, v\} \in e} 
+    \frac{w(e)}{d(e)} 
+    \left( \frac{f(u)}{\sqrt{d(u)}} - \frac{f(v)}{\sqrt{d(v)}}\ \right)^2 = 
+    f^{T} \Delta f  \\[3pt]
+    & \text{solution: } \qquad \Phi \ of \ \Delta \qquad 
+    \text{(eigenvector of smallest nonzero eigenvalue)}  \\[3pt]
+\end{align*}
+
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \newpage
 \section*{ch4: Hypergraph Convolution}
