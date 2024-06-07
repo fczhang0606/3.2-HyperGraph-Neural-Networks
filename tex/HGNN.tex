@@ -31,7 +31,7 @@
 
 %
 \begin{align*}
-    & \mathcal{G} = ( \mathcal{V} , \mathcal{E} , W )  \\[3pt]
+    & \mathcal{G} = ( \mathcal{V} , \mathcal{E} )  \\[3pt]
         & \qquad \mathcal{G} \quad \text{: hypergraph}  \\[3pt]
         & \qquad \mathcal{V} \quad \text{: vertices} 
           \qquad \qquad \text{U: Vertex Weight Matrix} 
@@ -61,6 +61,12 @@
 
 %
 \begin{align*}
+    & hyperpath: v1-e1-v2-e2-v3-... \qquad \qquad \qquad \qquad \qquad connected  \\[3pt]
+    & A = H W D^{-1}_{e} H^{T}  \\[3pt]
+\end{align*}
+
+%
+\begin{align*}
     & \Delta = D_{v} - H W D_{e}^{-1} H^{T} \\[3pt]
     & \Delta = I - D_{v}^{-1/2} H W D_{e}^{-1} H^{T} D_{v}^{-1/2} \\[3pt]
 \end{align*}
@@ -68,16 +74,125 @@
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \newpage
-\section*{ch2: Spectral Hypergraph Theory}
+\section*{ch2: Hypergraph Random Walk}
 
 
 ~ \\[3pt]
-\begin{CJK}{UTF8}{gbsn}
-    理解： \\[3pt]
-    1: 推导超图的拉普拉斯矩阵  \\[3pt]
-\end{CJK}
+%
+\begin{align*}
+    & u-e/w(e)-v/uni-e/w(e)-v/uni-...  \\[3pt]
+\end{align*}
 
 
+%
+\begin{align*}
+    & p(u, v) = \sum_{e \in E} 
+                h(u, e) \frac{w(e)}{d(u)} 
+                h(v, e) \frac{1}{d(e)}  \\[3pt]
+    & P = D_{v}^{-1} H W D_{e}^{-1} H^{T}  \\[3pt]
+\end{align*}
+
+
+%
+\begin{align*}
+    & \pi (v) = \frac{d(v)}{vol(V)} \qquad \qquad \qquad \qquad 
+      \text{one-step wlak to v from random start}  \\[3pt]
+    & \sum_{u \in V} \pi (u) p(u, v) = 
+      \sum_{u \in V} \frac{d(u)}{vol(V)} 
+      \sum_{e \in E} h(u, e) \frac{w(e)}{d(u)} h(v, e) \frac{1}{d(e)} \\[3pt]
+    & = \frac{1}{vol(V)} \sum_{u \in V} \sum_{e \in E} 
+        \frac{h(u, e)w(e)h(v, e)}{d(e)} \\[3pt]
+    & = \frac{1}{vol(V)} \sum_{e \in E} w(e) 
+        \sum_{u \in V} h(u, e) \frac{h(v, e)}{d(e)} \\[3pt]
+    & = \frac{1}{vol(V)} \sum_{e \in E} w(e) h(v, e) = \frac{d(v)}{vol(V)}  \\[3pt]
+\end{align*}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newpage
+\section*{ch3: Hypergraph Cut/Partition}
+
+
+~ \\[3pt]
+%
+\begin{align*}
+    & hypergraph \quad \ (cut/partition): V = S + S^{c} 
+    \qquad \qquad \qquad \text{k-way partition}  \\[3pt]
+    & hyperedge \qquad (cut/partition): (e \cap S) + (e \cap S^{c})  \\[3pt]
+    & hyperedge \qquad bountry: \partial S = \{ (e \cap S) + (e \cap S^{c}) \}  \\[3pt]
+\end{align*}
+
+
+%
+\begin{align*}
+    & \text{vol}(S) \ \ = \sum_{v \in S} d(v)  \\[3pt]
+    & \text{vol}(\partial S) = \sum_{e \in \partial S} 
+      |e \cap S||e \cap S^{c}| \frac{w(e)}{d(e)} 
+      \qquad \qquad \qquad \qquad C_{d(e)}^{2}  \\[3pt]
+    & \text{vol}(\partial S) = \text{vol}(\partial S^{c})  \\[3pt]
+\end{align*}
+
+
+%
+\begin{align*}
+    & argmin \ c(S) := vol(\partial S) (\frac{1}{volS} + \frac{1}{volS^{c}})  \\[3pt]
+    & argmin \ c(S) := \frac{vol(\partial S)}{vol(V)} 
+      (\frac{1}{ \frac{vol(S)}{vol(V)} } + 
+      \frac{1}{ \frac{vol(S^{c})}{vol(V)} })  \\[3pt]
+    & \frac{vol(S)}{vol(V)} 
+      = \sum_{v \in S} \frac{d(v)}{vol(V)} 
+      = \sum_{v \in S} \pi (v)  \\[3pt]
+    & \frac{vol(\partial S)}{vol(V)} = \sum_{e \in \partial S} 
+      |e \cap S||e \cap S^{c}| \frac{w(e)}{d (e)} 
+      \frac{1}{vol(V)}  \\[3pt]
+    & = \sum_{e \in \partial S} \sum_{u \in S} \sum_{v \in S^{c}} 
+        h(u, e) \frac{w(e)}{d(u)} h(v, e) \frac{1}{d(e)} 
+        \frac{d(u)}{vol(V)}  \\[3pt]
+    & = \sum_{u \in S} \sum_{v \in S^{c}} \frac{d(u)}{vol(V)} 
+        \sum_{e \in \partial S} h(u, e) \frac{w(e)}{d(u)} h(v, e) \frac{1}{d(e)}  \\[3pt]
+    & = \sum_{u \in S} \sum_{v \in S^{c}} \frac{d(u)}{vol(V)} p(u, v) 
+      = \sum_{u \in S} \sum_{v \in S^{c}} \pi (u) p(u, v)  \\[3pt]
+\end{align*}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newpage
+\section*{ch4: Hypergraph Laplacian}
+
+
+\begin{align*}
+    & argmin \ c(S) := vol(\partial S) (\frac{1}{volS} + \frac{1}{volS^{c}})  \\[3pt]
+    & argmin_{f \in R^{|V|}} \frac{1}{2} 
+      \sum_{e \in E} \sum_{\{u, v\} \in e} 
+      \frac{w(e)}{d(e)} 
+      \left( \frac{f(u)}{\sqrt{d(u)}} - \frac{f(v)}{\sqrt{d(v)}}\ \right)^2 \qquad \qquad 
+      R^{|V|} = \{1, -1\}^{|V|}  \\[3pt]
+    & \text{subject to: } \qquad 
+      \sum_{v \in V} f^2(v)=1 \qquad 
+      \sum_{v \in V} f(v) \sqrt{d(v)} = 0  \\[3pt]
+\end{align*}
+
+
+\begin{align*}
+    & \Theta = D_{v}^{-1/2} H W D_{e}^{-1} H^{T} D_{v}^{-1/2}  \\[3pt]
+    & \Delta = I - \Theta  \\[3pt]
+    & \frac{1}{2} 
+    \sum_{e \in E} \sum_{\{u, v\} \in e} 
+    \frac{w(e)}{d(e)} 
+    \left( \frac{f(u)}{\sqrt{d(u)}} - \frac{f(v)}{\sqrt{d(v)}}\ \right)^2 = 
+    f^{T} \Delta f  \\[3pt]
+    & \text{solution: } \qquad \Phi \ of \ \Delta \qquad 
+    \text{(eigenvector of smallest nonzero eigenvalue)}  \\[3pt]
+\end{align*}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newpage
+\section*{ch4: Hypergraph Convolution}
+
+
+~ \\[3pt]
+%
 \begin{align*}
     ~ \\[3pt]
     g \star x &= \phi ( (\phi^{T} g) \odot (\phi^{T} x) ) 
@@ -102,7 +217,7 @@
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \newpage
-\section*{ch3: Hypergraph Generation and Transformation}
+\section*{ch5: Hypergraph Generation and Transformation}
 
 
 ~ \\[3pt]
@@ -115,7 +230,7 @@
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \newpage
-\section*{ch4: Hypergraph Learning Architecture}
+\section*{ch6: Hypergraph Learning Architecture}
 
 
 ~ \\[3pt]
